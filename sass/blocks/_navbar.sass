@@ -39,7 +39,7 @@
   transform: translateY(-200%)
   opacity: 0
   &_active
-   // transform: translateY(0)
+    //transform: translateY(0)
     opacity: 1
   &__nav
     display: flex
@@ -81,5 +81,20 @@
     color: $text-color-light
 
 
-
- 
+@media only screen and (max-width : 992px)
+  .navbar
+    &__mobile, &__landline
+      display: none
+  
+@media only screen and (max-width : 576px)
+  .logo
+    display: none
+  .menu
+    top: 60px
+    //transform: translateY(0)
+    &-button
+      height: 60px
+    &__nav 
+      flex-direction: column
+    &__link
+      margin-bottom: 20px
