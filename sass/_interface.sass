@@ -1,6 +1,14 @@
 body 
   +light
   color: $text-color
+.section
+  padding: 100px 0
+  &-title
+    font-size: 30px
+    +bold
+    text-align: center
+  &__title
+    margin-bottom: 100px
 .button-o
   text-transform: uppercase
   padding: 17px 22px
@@ -8,7 +16,6 @@ body
   border: 2px solid $primary
   color: $primary
   +bold
-
 .button
   border: none
   text-transform: uppercase
@@ -16,11 +23,40 @@ body
   background-color: $primary
   color: #ffffff
   +bold
+.bg-secondary 
+  background: $bg-secondary
+.input  
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+input[type="checkbox"]
+  display: none
+  &:checked + label:before
+    background-color: $primary
+.checkbox
+  &-label
+    display: flex
+    align-items: center
+    margin-right: 40px
+    &:hover 
+      cursor: pointer
+    &:before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      margin-right: 19px
+
+
 
 
 @media only screen and (max-width : 576px)
   .button-o
     font-size: 10px
+  .section 
+    padding: 60px 0
+    &-title
+      font-size: 24px
 
 
 
