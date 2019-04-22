@@ -8,7 +8,11 @@
         "../sass/_colors.sass",
         "../sass/_interface.sass",
         "../sass/blocks/_navbar.sass",
-        "../sass/blocks/_hero.sass"
+        "../sass/blocks/_hero.sass",     
+        "../sass/blocks/_offer.sass",
+        "../sass/blocks/_features.sass",
+        "../sass/blocks/_catalog.sass",
+        "../sass/blocks/_blog-list.sass"
     ],
     "names": [],
     "file": "style.css"
