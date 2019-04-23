@@ -1,5 +1,3 @@
-@charset "UTF-8";
-@import e:\Valya\проекты\skinali\sass\blocks\_price.sass step-;
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -737,7 +735,7 @@ input[type="checkbox"]:checked + label:before {
   bottom: -80px;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -751,6 +749,68 @@ input[type="checkbox"]:checked + label:before {
 @media only screen and (max-width: 400px) {
   .price-block__card {
     margin: 10px;
+  }
+}
+
+.step {
+  position: relative;
+  text-align: center;
+}
+
+.step__title {
+  font-size: 18px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.step__text {
+  font-size: 14px;
+  max-width: 158px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.step:last-child:before {
+  display: none;
+}
+
+.step:before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: rgba(126, 123, 120, 0.5);
+  display: block;
+  position: absolute;
+  top: 25%;
+  right: -63%;
+}
+
+.steps {
+  background-color: #f5f6f8;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1199px) {
+  .step {
+    width: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .step {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

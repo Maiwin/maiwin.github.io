@@ -1,0 +1,39 @@
+.step
+  position: relative
+  text-align: center
+  &__title
+    font-size: 18px
+    +bold
+  &__text
+    font-size: 14px
+    max-width: 158px
+    margin: auto
+    margin-bottom: 30px
+  &:last-child
+    &:before 
+      display: none 
+  &:before 
+    content: ''
+    height: 2px
+    width: 100%
+    background-color: rgba(#7e7b78, 0.5)
+    display: block
+    position: absolute
+    top: 25%
+    right: -63%
+  &s
+    background-color: #f5f6f8
+    &-block
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+@media only screen and (max-width : 1199px)
+  .step 
+    width: 33%
+    &:before
+      display: none
+
+@media only screen and (max-width : 768px)
+  .step
+    width: 100%
