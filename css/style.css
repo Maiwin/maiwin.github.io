@@ -885,12 +885,35 @@ input[type="checkbox"]:checked + label:before {
   border-top: 10px solid #fff;
 }
 
+section.section.factory {
+  padding-top: 0;
+}
+
 .factory-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .factory-block__text {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
