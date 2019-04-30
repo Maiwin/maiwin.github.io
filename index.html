@@ -8,6 +8,7 @@
   <title>Фабрика Скинали</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
           <div class="logo navbar__logo">
             <strong class="logo__text">Фабрика скинали №1</strong>
             <span class="logo__description">ведущий производитель скинали</span>
-          </div><!-- logo navbar__logo -->
+          </div>
           <div class="navbar__mobile">
             <a class="navbar__phone" href="tel:+79121234567">+7 912 123-45-67</a>
             <span class="navbar__work-time navbar__small-text">без выходных 9-21</span>
@@ -50,7 +51,6 @@
       </div>
     </div><!-- navbar -->
 
-
     <div class="hero">
       <div class="container">
         <h1 class="hero__title">Гарантия <br>минимальной цены <br>на скинали</h1>
@@ -59,7 +59,6 @@
       </div>
     </div><!-- hero -->
   </header>
-
 
   <main>
     <section class="offer bg-secondary">
@@ -81,13 +80,13 @@
                 <label for="" class="label form__label">Высота, см</label>
                 <input type="text" class="input form__input">
               </div>
-            </div><!-- form__row -->
+            </div>
             <div class="form__row form__row-checkbox">
               <div class="form__checkbox"><input class="checkbox" id="install" type="checkbox"><label
                   class="checkbox-label" for="install">Монтаж</label></div>
               <div class="form__checkbox"><input class="checkbox" id="delivery" type="checkbox"><label
                   class="checkbox-label" for="delivery">Доставка</label></div>
-            </div><!-- form__row -->
+            </div>
             <div class="form__row">
               <div class="form__group"><input type="text" class="input form__input" placeholder="Ваше имя"></div>
               <div class="form__group"><input type="text" class="input form__input" placeholder="Ваш телефон"></div>
@@ -136,10 +135,8 @@
     <section class="section catalog">
       <div class="container">
         <h2 class="section-title section__title">Kаталог скинали</h2>
-
         <div class="catalog-block">
           <div class="catalog-card catalog__card">
-            <!--правильней назвать catalog-block__item-->
             <img class="catalog-card__image" src="img/catalog/catalog-1.png" alt="Коллажи"><span
               class="catalog-card__tag">Коллажи</span>
             <div class="catalog-card__buttons">
@@ -249,7 +246,6 @@
     <section class="section price">
       <div class="container">
         <h2 class="section-title section__title">Цены и виды скинали</h2>
-
         <div class="price-block">
           <div class="price-card price-block__card">
             <div class="price-card__image"><img src="img/price/price-1.png" alt="Прозрачные"></div>
@@ -373,10 +369,41 @@
       </div>
     </section><!-- steps -->
 
+    <section class="section before">
+      <div class="container">
+        <h2 class="section-title section__title">До и после</h2>
+        <div class="before-slider-wrap">
+          <div class="before-slider">
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/1_1.jpg" alt="slider__item">
+                <img src="img/before-slider/1_2.jpg" alt="slider__item">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/1_1.jpg" alt="slider__item">
+                <img src="img/before-slider/1_2.jpg" alt="slider__item">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before-slider/1_1.jpg" alt="slider__item">
+                <img src="img/before-slider/1_2.jpg" alt="slider__item">
+              </div>
+            </div>
+          </div>
+          <div class="before-slider-arrows">
+            <button class="arrow arrow-left"><img src="img/before-slider/left.jpg" alt="#"></button>
+            <button class="arrow arrow-right"><img src="img/before-slider/right.jpg" alt="#"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section reviews">
       <div class="container">
         <h2 class="section-title section__title">Отзывы наших клиентов</h2>
-
         <div class="reviews-slider">
           <div class="reviews-slider__item">
             <div class="reviews-slider__text">Девушка подобрала лучший вариант для меня, без первого взноса и с
@@ -407,8 +434,8 @@
       <div class="container">
         <div class="offer__block offer-block offer-block_price-bg">
           <h2 class="offer__title">Ищите где дешевле и лучше?</h2>
-          <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее -
-          и мы вам пересчитаем заказ с максимальной скидкой</span>
+          <span class="offer__subtitle">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите
+            ее - и мы вам пересчитаем заказ с максимальной скидкой</span>
           <form action="#" class="form offer__form">
             <div class="form__row">
               <div class="form__group">
@@ -420,13 +447,14 @@
               <div class="form__group">
                 <input type="text" class="input form__input" placeholder="Ваша цена">
               </div>
-            </div><!-- form__row -->
+            </div>
             <div class="form__row">
               <div class="form__group">
                 <input type="submit" class="button form__button form__button-price" value="Получить расчет со скидкой">
               </div>
               <div class="form__group">
-                <span class="form__policy">Ваши данные надежно защищены. Отправление заявки ни к чему не обязывает.</span>
+                <span class="form__policy">Ваши данные надежно защищены. Отправление заявки ни к чему не
+                  обязывает.</span>
               </div>
             </div>
           </form>
@@ -442,11 +470,14 @@
             <img src="img/factory/factory-1.png" alt="O производстве">
           </div>
           <div class="factory-block__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
           </div>
         </div>
       </div>
@@ -472,12 +503,12 @@
             <div class="contacts__text">
               <a href="#" class="contacts__link">5404177@mail.ru</a></div>
           </div>
-        </div>  
+        </div>
       </div>
     </section><!-- contacts -->
+
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b7ebf47e0a66f9b2d92a91392ef8d4941503584b0e467af46385a71fd6664c9&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+
     </div>
 
     <section class="section questions">
@@ -490,15 +521,54 @@
     </section><!-- questions -->
   </main>
 
-  
-
-
-
-
-
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer__description">
+          <h4 class="footer__title">Фабрика скинали №1</h4>
+          <span class="footer__subtitle">ведущий производитель скинали</span>
+          <span class="footer__copy">© Фабрика скинали №1</span>
+        </div>
+        <div class="footer__pay-logo">
+          <img src="img/footer/webmoney-paying-logo.png" alt="webmoney" class="footer__pay-logo">
+          <img src="img/footer/yandex-pay-logo.png" alt="yandex-pay" class="footer__pay-logo">
+          <img src="img/footer/master-card-logo.png" alt="master-card" class="footer__pay-logo">
+          <img src="img/footer/visa-pay-logo.png" alt="visa-pay" class="footer__pay-logo">
+        </div>
+        <div class="footer__contacts">
+          <a href="#" class="footer__phone">+7 499 123-45-67</a>
+          <a href="#" class="footer__mail">5404177@mail.ru</a>
+          <div class="footer-social">
+            <a href="#" class="footer-social__link"><img src="img/footer/twitter.png" alt="twitter"></a>
+            <a href="#" class="footer-social__link"><img src="img/footer/facebook.png" alt="facebook"></a>
+            <a href="#" class="footer-social__link"><img src="img/footer/vk.png" alt="vk"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!--Подключение виджета обратной связи через соцсети-->
+  <script src="js/jquey-3.1.1.min.js"></script>
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=618"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(window).on('load', function () {
+      $(".before-after").twentytwenty({
+        before_label: 'без скинали',
+        after_label: 'скинали'
+      });
+      $('.before-slider').slick({
+        draggable: false,
+        dots: true,
+        dotsClass: 'before-slider__dots',
+        prevArrow: $('.arrow-left'),
+        nextArrow: $('.arrow-right')
+      });
+    });
+  </script>
+  <!--   <script src="js/main.js"></script> -->
 </body>
 
 </html>
