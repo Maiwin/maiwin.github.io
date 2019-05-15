@@ -31,4 +31,15 @@ $(window).on('load', function () {
     return false;
   });
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
+
+  //показывать карту когда пользователь докрудил до блока reviews для снижения нагрузки 
+  var reviews = $('.reviews');
+  var reviewsTop = reviews.offset().top;
+  $(window).bind('scroll', function() {
+    var windowTop = $(this).scrollTop();
+    if (windowTop > reviewsTop) {
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b7ebf47e0a66f9b2d92a91392ef8d4941503584b0e467af46385a71fd6664c9&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>')
+      $(window).unbind('scroll');
+    }
+  });
 });
