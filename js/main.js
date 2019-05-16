@@ -25,6 +25,8 @@ $(window).on('load', function () {
     $('.select_checked').text(value);
     $('.select__dropdown').toggleClass('select__dropdown_open');
   });
+
+  // маска на форму для ввода номера
   $("a[href^='#']").click(function () {
     var _href = $(this).attr("href");
     $("html, body").animate({ scrollTop: $(_href).offset().top - 130 + "px" });
@@ -43,3 +45,4 @@ $(window).on('load', function () {
     }
   });
 });
+
